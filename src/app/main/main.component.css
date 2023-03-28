@@ -1,0 +1,33 @@
+.navbartext{
+    font-size: larger;
+    color: aliceblue;
+}
+.img-box{
+    height:360px; 
+    width:540px;
+    border-radius: 20px;
+    transform: translate(-10px,0);
+}
+.empty-box{
+    height:360px; 
+    width:540px;
+    border-radius: 20px;
+    transform: translate(-10px,0);
+    z-index: 1;
+}
+.empty-box:hover{
+    animation:fadein 1s ease;
+}
+@keyframes fadein {
+    from {opacity:0};
+    to {opacity:10%};
+}
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 0px;
+    transition: all 0.7s;
+    z-index: 1;
+  }
